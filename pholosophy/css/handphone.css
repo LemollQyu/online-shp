@@ -1,0 +1,10 @@
+@media (max-width: 628px) {
+
+	.container-full {
+		height: 70vh;
+	}
+	.container-full .bingkai {
+		width: 290px;
+		height: 350px;
+	}
+}

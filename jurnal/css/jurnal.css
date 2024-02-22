@@ -1,0 +1,297 @@
+@font-face {
+  font-family: proxima;
+  src: url(../asset/font/proxima.woff);
+}
+
+@font-face {
+  font-family: zap;
+  src: url(../asset/font/zap.woff); 
+}
+
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border-style: none;
+
+	  
+
+
+ 
+	
+}
+
+:root {
+	--menu-bg: #897A73;
+	--menu-txt: #ECE8DD;
+	--txt: #FFFFFF;
+	--txt-nama: #6F8555;
+}
+
+body {
+	background-color: #eee;
+	overflow-x: hidden;
+
+
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+}
+
+h1, h2, h3, h4 {
+	font-family: proxima;
+}
+
+p, a, cite, blockquote {
+	font-family: zap;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3%;
+	position: fixed;
+	background-color: rgba(255,255,255,.5);
+	top: 0;
+	z-index: 999;
+	color: #000;
+	width: 100%;
+	height: 100px;
+	font-size: 1.2rem;
+	font-weight: 200;
+	transition: .7s;
+}
+
+.nav.active {
+	background-color: #ececea;
+	color: #000;
+}
+
+.nav.active .icon-shop svg g {
+	stroke:#000;
+}
+
+.nav.active #humberger-menu line {
+	stroke: #000;
+}
+
+.nav .icon-shop svg g {
+	stroke: #000; 
+}
+
+.nav #humberger-menu {
+	display: none;
+}
+
+.nav ul li a {
+	padding: 2rem;
+
+}
+
+.nav .logo {
+	margin-left: 2.8rem;
+}
+
+.nav .logo h2 {
+	font-size: 2.3rem;
+}
+
+
+
+
+.nav ul, .nav-right {
+	display: flex;
+	align-items: center;
+}
+
+.nav .nav-right .icon-shop {
+	margin-left: 2rem;
+}
+
+
+
+.box-menu {
+	position: fixed;
+	z-index: 998;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+	background-color: #ececea;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	transition: .7s;
+}
+
+.box-menu.active {
+	left: 0;
+}
+
+.box-menu .list-menu {
+	text-align: center;
+}
+
+.box-menu .list-menu li a {
+	font-size: 1.7rem;
+	padding: .7rem 1.7rem; 
+}
+
+.box-menu .link-social {
+
+}
+
+.box-menu .link-social .icon-social {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.name-page h2 {
+	letter-spacing: .2rem;
+	font-weight: 200;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+.container-xl {
+
+	margin-top: 80px;
+	padding: 3.4rem;
+	height: 140vh;
+	width: 100%;
+	background-color: #fff;
+}
+
+.column {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	grid-gap: 1.4rem;
+}
+
+.container-xl a {
+	color: #a8a8a8;
+}
+.container-xl .back-home {
+	font-size: 1.1rem;
+}
+
+.container-xl .name-product {
+	font-size: 1.6rem;
+	font-weight: 200;
+}
+
+.container-xl .img {
+	height: 580px;
+	width: 400px;
+	margin: 1rem 0;
+}
+
+.container-xl .img img {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.page-tambah {
+	margin-top: 0;
+}
+
+.page.reverse {
+	flex-direction: row-reverse;
+}
+
+.padding-left {
+	padding-left: 20%;
+}
+
+.padding-right {
+	padding-right: 20%;
+}
+
+
+.page {
+	background-color: #fff;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 2.2rem; 
+	width: 100%;
+}
+
+.page .bingkai-page {
+	width: 300px;
+	height: 430px;
+}
+
+.page .bingkai-page img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.page .txt-page {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 2rem;
+}
+
+.page .txt-page .cover-txt {
+	grid-gap: .2rem;
+}
+
+.footer-brands {
+	height: 25vh;
+	display: flex;
+	padding: 0 2%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-brands a {
+	color: #a8a8a8;
+}
+
+.footer-brands .subscribe {
+	font-size: 1.2rem;
+}
+
+.footer-brands .brand {
+	font-size: 1.6rem;
+	margin-right: 10rem;
+}
+
+.footer-brands .icon {
+	display: flex;
+}
+
+.footer-brands .icon i {
+	margin-right: 1rem;
+	color: #a8a8a8;
+}
+
+.footer-contact {
+	height: 15vh;
+	background-color: #ececea;
+	color: #a8a8a8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	grid-gap: 1rem;
+	padding: 3%;
+}
+
+.footer-contact a {
+	font-size: .9rem;
+}

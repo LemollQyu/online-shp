@@ -1,0 +1,103 @@
+@media (max-width: 767px) {
+	.nav {
+		height: 80px;
+		font-size: 1rem;
+		padding: 5px 1%;
+	}
+
+	.nav ul {
+		justify-content: space-around;
+		display: none;
+	}
+ 
+	.nav #humberger-menu {
+		display: inline-block;
+		height: 40px;
+		width: 45px;
+	}
+
+	.nav ul li a {
+		padding: 1.2rem;
+	}
+
+	.nav .logo {
+		margin-left: 1.4rem;
+	}
+
+	.nav .logo h2 {
+		font-size: 1.5rem;
+		letter-spacing: 2px;
+	}
+
+
+
+
+
+	#panel .slides {
+		height: 50vh;
+	}
+
+	.btn-slide {
+
+		right: 0px;
+		bottom: 350px;
+	}
+
+	.box-quote {
+		margin-top: -22rem;
+	}
+
+	.box-quote p {
+		width: 27rem;
+
+	}
+
+	.page {
+		flex-direction: column;
+	}
+
+	.page .bingkai-page {
+		width: 180px;
+		height: 257px;
+	}
+
+	.page .txt-page {
+		margin-top: 1.2rem;
+		grid-gap: .4rem;
+		align-items: center;
+	}
+
+	.page .txt-page .cover-txt {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.footer-brands {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-gap: .4rem;
+
+		font-size: 64%;
+
+	}
+
+	.footer-brands .subscribe {
+		order: 3;
+	}
+
+	.footer-brands .brand, .footer-brands .icon i {
+		margin-right: 0;
+		
+	}
+
+	.icon {
+		grid-gap: .4rem;
+	}
+
+
+
+
+}

@@ -1,0 +1,47 @@
+@media(max-width: 1026px) {
+
+
+	.nav {
+		height: 80px;
+		font-size: 1rem;
+		padding: 5px 1%;
+	} 
+
+	.nav ul {
+		justify-content: space-around;
+	}
+
+	.nav ul li a {
+		padding: 1.2rem;
+	}
+
+	.nav .icon-shop {
+		margin-right: .5rem;
+	}
+
+	.nav .logo h2 {
+		font-size: 1.4rem;
+	}
+
+	.container-xl .img {
+		height: 540px;
+		width: 380px;
+	}
+
+	.page {
+		grid-gap: 1rem;
+	}
+
+	.page .bingkai-page {
+		height: 460px;
+		width: 330px;
+	}
+
+	.padding-left {
+		padding-left: 0;
+	}
+
+	.padding-right {
+		padding-right: 0;
+	}
+}

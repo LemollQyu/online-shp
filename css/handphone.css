@@ -1,0 +1,23 @@
+@media (max-width: 628px) {
+
+	#panel .slides {
+		height: 80vh;
+	}
+
+	.btn-slide {
+
+		right: 0px;
+		bottom: 160px;
+	}
+
+	.box-quote {
+		margin-top: -8.7rem;
+	} 
+
+	.box-quote p {
+		font-weight: 200;
+		width: 90%;
+
+	}
+ 
+}

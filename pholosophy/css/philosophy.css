@@ -1,0 +1,383 @@
+@font-face {
+  font-family: proxima;
+  src: url(../../asset/font/proxima.woff);
+}
+
+@font-face {
+  font-family: zap;
+  src: url(../../asset/font/zap.woff); 
+}
+
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border-style: none;
+
+	  
+
+
+ 
+	
+}
+
+:root {
+	--menu-bg: #897A73;
+	--menu-txt: #ECE8DD;
+	--txt: #FFFFFF;
+	--txt-nama: #6F8555;
+}
+
+body {
+	background-color: #eee;
+	overflow-x: hidden;
+
+
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+}
+
+h1, h2, h3, h4 {
+	font-family: proxima;
+}
+
+p, a, cite, blockquote {
+	font-family: zap;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3%;
+	position: fixed;
+	background-color: rgba(255,255,255,.5);
+	top: 0;
+	z-index: 999;
+	color: #000;
+	width: 100%;
+	height: 100px;
+	font-size: 1.2rem;
+	font-weight: 200;
+	transition: .7s;
+}
+
+.nav.active {
+	background-color: #ececea;
+	color: #000;
+}
+
+.nav.active .icon-shop svg g {
+	stroke:#000;
+}
+
+.nav.active #humberger-menu line {
+	stroke: #000;
+}
+
+.nav .icon-shop svg g {
+	stroke: #000; 
+}
+
+.nav #humberger-menu {
+	display: none;
+}
+
+.nav ul li a {
+	padding: 2rem;
+
+}
+
+.nav .logo {
+	margin-left: 2.8rem;
+}
+
+.nav .logo h2 {
+	font-size: 2.3rem;
+}
+
+
+
+
+
+.nav ul, .nav-right {
+	display: flex;
+	align-items: center;
+}
+
+.nav .nav-right .icon-shop {
+	margin-left: 2rem;
+}
+
+
+
+.box-menu {
+	position: fixed;
+	z-index: 998;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+	background-color: #ececea;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	transition: .7s;
+}
+
+.box-menu.active {
+	left: 0;
+}
+
+.box-menu .list-menu {
+	text-align: center;
+}
+
+.box-menu .list-menu li a {
+	font-size: 1.7rem;
+	padding: .7rem 1.7rem; 
+}
+
+.box-menu .link-social {
+
+}
+
+.box-menu .link-social .icon-social {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.name-page h2 {
+	letter-spacing: .2rem;
+	font-weight: 200;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+
+
+.name-page {
+	margin-top: 80px;
+	font-weight: 200;
+	padding: 3.4rem;
+	width: 100%;
+	height: 30vh;
+	background-color: #fff;
+	
+}
+
+.name-page h2 {
+	text-align: center;
+}
+
+
+.container-full {
+	height: 120vh;
+	position: relative;
+	background-color: #fff;
+	
+
+}
+
+.container-full .bingkai {
+	width: 444px;
+	height: 667px;
+	position: absolute;
+	
+	transform: translateY(-50%);
+	opacity: 50%;
+	transition: 3s;
+	transform: scale(.9);
+
+}
+
+.container-full .wadah {
+	top: 50%;
+	left: 50%;
+	
+}
+
+.container-full .bingkai:hover {
+	opacity: 90%;
+}
+
+.container-full .satu {
+	left: 23%;
+	
+}
+
+.container-full .dua {
+	right: 23%;
+	
+}
+
+.container-full .bingkai img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.bingkai.opacity {
+	opacity: 85%;
+	z-index: 10;
+	transform: scale(1);
+
+} 
+
+.container-full .footer-name-img {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+	
+
+	position: absolute;
+	bottom: 10%;
+}
+
+.container-full .footer-name-img .name {
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #888;
+	opacity: 0;
+	transition-duration: 1s;
+}
+
+.container-full .footer-name-img .name.on {
+	opacity: 100%;
+}
+
+
+
+.container-full .footer-name-img .btn-slide {
+	display: flex;
+	grid-gap: .5rem;
+}
+
+.container-full .footer-name-img .btn-slide .btn {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 1px solid #888;
+	transition-duration: 1s;
+}
+
+.container-full .footer-name-img .btn-slide .btn.on {
+	background-color: #888;
+	transform: scale(1.4);
+}
+
+
+
+.container-full .wadah {
+	display: none;
+} 
+
+.container-full .wadah.on {
+	display: inline-block;
+}
+
+.container-typ {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 3.4rem;
+	background-color: #fff;
+}
+
+.container-typ .box-quote {
+	height: 40vh;
+	padding: 0 4%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container-typ .box-quote p {
+	font-size: 1.6rem;
+	text-align: center;
+	width: 100%;
+}
+
+.container-typ .box-quote h2 {
+	margin-top: 1.2rem;
+	font-size: 1.1rem;
+	text-align: center;
+	color: #a4a4a4;
+}
+
+.container-typ .contain {
+	width: 50rem;
+	padding: 0 4%;
+
+}
+
+.container-typ .contain p {
+	font-size: 1.2rem;
+}
+
+.container-typ .contain {
+	text-align: center;
+
+}
+
+.container-l {
+
+	display: flex;
+	background-color: #ececea;
+	height: 50vh;
+}
+
+.container-l .txt-page {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 5%;
+	grid-gap: .5rem;
+}
+
+.container-l .txt-page h2,
+.container-l .txt-page p {
+	text-align: right;
+	width: 100%;
+}
+
+.container-l .bingkai-img {
+	width: 50%;
+	height: 100%;
+}
+
+.container-l .bingkai-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} 
+
+.container-l.reverse {
+	flex-direction: row-reverse;
+}
+
+.container-l.reverse .txt-page h2,
+.container-l.reverse .txt-page p {
+	text-align: left;
+	width: 100%;
+}
